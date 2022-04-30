@@ -3,6 +3,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import { BgImage } from "gbimage-bridge"
 import { getImage } from "gatsby-plugin-image"
 import * as style from "../css/home.module.scss"
+import Typer from "../typer"
 
 export default function Cover() {
   const { placeholderImage123 } = useStaticQuery(
@@ -20,12 +21,13 @@ export default function Cover() {
       }
     `
   )
+
   const pluginImage = getImage(placeholderImage123)
 
   return (
     <div>
       <BgImage image={pluginImage} className={style.cover}>
-        <h1 className={style.landingtext}>I am Matthew the motorcyclist</h1>
+        <Typer></Typer>
       </BgImage>
     </div>
   )

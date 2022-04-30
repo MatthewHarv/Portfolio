@@ -12,6 +12,7 @@ export default class header extends Component {
 
     this.handleClick = this.handleClick.bind(this)
   }
+
   handleClick() {
     this.setState(state => ({
       isToggleOn: !state.isToggleOn,
@@ -32,7 +33,7 @@ export default class header extends Component {
                 <a href="#about">About</a>
               </li>
               <li>
-                <a href="#work">Projects</a>
+                <a href="#work">Work</a>
               </li>
               <li>
                 <a href="#contact">Contact</a>
@@ -64,7 +65,7 @@ export default class header extends Component {
                       </li>
                       <li>
                         <a href="#work" onClick={this.handleClick}>
-                          My Work
+                          Work
                         </a>
                       </li>
                       <li>

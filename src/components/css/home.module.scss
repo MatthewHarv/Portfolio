@@ -41,10 +41,7 @@
   margin-top: -500px;
 }
 
-.about{
-  padding-top:500px;
-  background-color: lightblue;
-}
+
 .work {
   background-color: lightgreen;
   padding-top: 500px;
@@ -53,4 +50,15 @@
   padding-top: 500px;
   background-color: lightcoral;
   padding-bottom:200px;
+}
+
+.landingText{
+  color:white;
+  font-size: 4rem;
+  margin-top: -20vh;
+  text-align: center;
+  @media (max-width: 993px) {
+    font-size: 2.5rem;
+ 
+  }
 }

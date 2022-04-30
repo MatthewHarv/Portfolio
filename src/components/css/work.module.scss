@@ -1,0 +1,25 @@
+@import "./variables.module";
+
+.title{
+    color:black;
+    font-size: 2.5rem;
+}
+
+.container {
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 150px;
+
+  
+}
+
+.descriptionContainer{
+    display: flex;
+    justify-content: space-evenly;
+    @media (max-width: 800px) {
+      
+        flex-direction: column;
+      
+    }
+  
+}
