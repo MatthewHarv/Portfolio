@@ -11,7 +11,7 @@ export default class work extends Component {
           <div>
             <h3>The POS People</h3>
             <StaticImage
-              className={style.siteimage}
+              className={style.workimage}
               src="../images/tpp.png"
               alt="Matthew"
               formats={["AUTO", "WEBP"]}
@@ -20,7 +20,7 @@ export default class work extends Component {
           <div>
             <h3>Town Mouse</h3>
             <StaticImage
-              className={style.siteimage}
+              className={style.workimage}
               src="../images/town.png"
               alt="Matthew"
               formats={["AUTO", "WEBP"]}
@@ -29,7 +29,7 @@ export default class work extends Component {
           <div>
             <h3>Github</h3>
             <StaticImage
-              className={style.siteimage}
+              className={style.workimage}
               src="../images/github.png"
               alt="Matthew"
               formats={["AUTO", "WEBP"]}

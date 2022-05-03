@@ -18,7 +18,7 @@ const IndexPage = () => (
     <div id="work">
       <Work></Work>
     </div>
-    <div id="work">
+    <div id="contact">
       <Contact></Contact>
     </div>
   </Layout>
