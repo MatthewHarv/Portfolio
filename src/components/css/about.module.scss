@@ -1,14 +1,19 @@
 @import "./variables.module";
 
 .title{
-  color:black;
-  font-size: 2.5rem;
+  color:$themecolour;
+  font-size: 3rem;
+  font-family: zProxBold;
 }
 
 .container{
   text-align: center;
-  margin-top: 150px;
+  padding-top: 150px;
     margin-bottom: 150px;
+    min-height: 100vh;
+    @media (max-width: 992px) {
+        padding-top: 100px;
+      }
 }
 .imageContainer{
   margin-top: 50px;
@@ -17,11 +22,17 @@
 
 .description{
 
-  font-size: 2rem;
+ 
+  font-size: 1.4rem;
   width:80%;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: auto;
   margin-bottom: 50px;
+  font-family: zProxReg;
+  @media (max-width: 992px) {
+    font-size: 1.2rem;
+    width: 100%
+    }
 }
 .siteimage{
   margin-top:5px;

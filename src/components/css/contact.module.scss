@@ -9,51 +9,68 @@
 .outContact {
   min-height: 100vh;
   padding: 30px;
-  background: url("../../images/showcase.png");
+  background: url("../../images/auckland.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
+
   justify-content: center;
   align-items: center;
+
   
-}
+ }
 
 .contactform {
 background-color: lightblue;
   color: black;
   padding: 20px;
   border: 1px solid black;
-  min-height: 50vh;
  width:80%;
  max-width:1000px;
- display: flex;
+ display: grid;
+  grid-template-columns:2fr 2fr;
+  margin:auto;
+  margin-top: 30vh;
+  min-height: 500px;
+        border-radius: 5px;
+ @media (max-width: 768px) {
+              grid-template-columns: 1fr;
+
+              
 }
 
-.content{
-flex-grow: 80;
 }
 
-.formContainer{
-flex-grow: 40;
-}
 
-.input {
+.input, .inputMessage {
   border: 1px solid black;
   display: block;
   margin-bottom: 1rem;
   margin: auto;
-  width:50%;
+  width:80%;
+  height: 2.5rem;
+  margin-top: 1.2rem;
+  font-size: 1.3rem;
+  padding-left:10px;
+  @media (max-width: 768px) {
+      width: 90%;
+ 
+}
+}
+.inputMessage{
+ 
+    height: 8rem;  
+      resize: none;
 }
 
-.inputButton {
-  background-color: white;
-  border: 1px black solid;
-  color: black;
-  margin: auto;
-  text-align: center;
+.input::placeholder, .inputMessage::placeholder{
+  color: lightgray;
+  font-size: 20px;
+  font-family: Arial;
+    font-family: zProxReg;
 }
+
 
 .inputButton:hover {
   background-color: lightgrey;
@@ -65,7 +82,7 @@ flex-grow: 40;
 
 .labelContainer{
   text-align: center;
-  color:red;
+  color:$themecolour;
   margin: auto;
 }
 
@@ -74,30 +91,37 @@ label {
   width: 100%;
 
 }
-
-@media (max-width: 576px) {
-  .contactform {
-    margin-top: 5rem;
-  }
-
-  .outContact {
-    padding: 5px;
-  }
-
-  .infoDescription {
-    width: 90%;
-    margin-bottom: 1rem;
-  }
-
-  .infoContact {
-    margin-bottom: 0.5rem;
-  }
-
-  .contactContainer {
-    margin-bottom: 2rem;
-  }
-
-  .formContainer {
-    text-align: center;
-  }
+.contactTitle{
+ text-align: center;
+  margin-bottom: 20px;
+  color: $themecolour;
+    font-size: 3rem;
+    font-family: zProxBold;
 }
+
+
+.infoDescription{
+  font-size: 1.3rem;
+  padding-top:2rem;
+    font-family: zProxReg;
+ 
+}
+
+.formButton{
+ 
+  text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+   
+   
+  }
+
+  .inputButton{
+    color: white;
+    height:3rem;
+    width:100px;
+    background-color: $themecolour;
+      border-radius: 12px;
+      font-size: 1.2rem;
+        font-family: zProxReg;
+  }

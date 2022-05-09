@@ -1,5 +1,6 @@
 import * as style from "../components/css/navbar.module.scss"
 import Logo from "../images/matthewlogo.png"
+import scrollTo from "gatsby-plugin-smoothscroll"
 
 import React, { Component } from "react"
 
@@ -9,7 +10,6 @@ export default class header extends Component {
     this.state = {
       isToggleOn: false,
     }
-
     this.handleClick = this.handleClick.bind(this)
   }
 
@@ -24,21 +24,49 @@ export default class header extends Component {
       <header>
         <nav className={style.mainnav}>
           <div className={style.container}>
-            <img src={Logo} alt="logo" className={style.logo}></img>
+            <button
+              className={style.logoContainer}
+              onKeyDown={() => scrollTo("#landing")}
+              onClick={() => scrollTo("#landing")}
+            >
+              <img src={Logo} alt="logo" className={style.logo}></img>
+            </button>
+
             <ul className={style.navList}>
               <li>
-                <a href="#landing">Home</a>
+                <button
+                  className={style.navLinks}
+                  onClick={() => scrollTo("#landing")}
+                >
+                  Home
+                </button>
               </li>
               <li>
-                <a href="#about">About</a>
+                <button
+                  className={style.navLinks}
+                  onClick={() => scrollTo("#about")}
+                >
+                  About
+                </button>
               </li>
               <li>
-                <a href="#work">Work</a>
+                <button
+                  className={style.navLinks}
+                  onClick={() => scrollTo("#work")}
+                >
+                  Work
+                </button>
               </li>
               <li>
-                <a href="#contact">Contact</a>
+                <button
+                  className={style.navLinks}
+                  onClick={() => scrollTo("#contact")}
+                >
+                  Contact
+                </button>
               </li>
             </ul>
+
             <div>
               <input
                 type="checkbox"
@@ -54,24 +82,48 @@ export default class header extends Component {
                   <div>
                     <ul>
                       <li>
-                        <a href="#landing" onClick={this.handleClick}>
+                        <button
+                          className={style.navLinks}
+                          onClick={() => {
+                            scrollTo("#landing")
+                            this.handleClick()
+                          }}
+                        >
                           Home
-                        </a>
+                        </button>
                       </li>
                       <li>
-                        <a href="#about" onClick={this.handleClick}>
+                        <button
+                          className={style.navLinks}
+                          onClick={() => {
+                            scrollTo("#about")
+                            this.handleClick()
+                          }}
+                        >
                           About
-                        </a>
+                        </button>
                       </li>
                       <li>
-                        <a href="#work" onClick={this.handleClick}>
+                        <button
+                          className={style.navLinks}
+                          onClick={() => {
+                            scrollTo("#work")
+                            this.handleClick()
+                          }}
+                        >
                           Work
-                        </a>
+                        </button>
                       </li>
                       <li>
-                        <a href="#contact" onClick={this.handleClick}>
+                        <button
+                          className={style.navLinks}
+                          onClick={() => {
+                            scrollTo("#contact")
+                            this.handleClick()
+                          }}
+                        >
                           Contact
-                        </a>
+                        </button>
                       </li>
                     </ul>
                   </div>
@@ -87,6 +139,12 @@ export default class header extends Component {
 }
 
 /**
+ * 
+ *  <a href="#work" onClick={this.handleClick}>
+                          Work
+                        </a>
+ * 
+ * 
  * 
  *   <button onClick={this.handleClick}>
               {(() => {

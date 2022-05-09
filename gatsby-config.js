@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Matthew Harvey Portfolio`,
+    title: `Matthew Harvey's Portfolio`,
     description: `Matthew Harvey's Portfolio`,
     author: `@matthewharvey`,
     siteUrl: `https://www.matthewharvey.co.nz/`,
@@ -10,6 +10,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sass`,
+    `gatsby-plugin-smoothscroll`,
 
     {
       resolve: `gatsby-source-filesystem`,
@@ -31,7 +32,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/matthewlogo.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

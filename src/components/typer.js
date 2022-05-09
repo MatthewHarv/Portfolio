@@ -13,13 +13,14 @@ export default class typer extends Component {
       startDelay: 500,
     }
 
-    new Typed("#landingText", options)
+    new Typed("#textChange", options)
   }
   render() {
     return (
       <div>
         <h1 className={style.landingText}>
-          Matthew the <span id="landingText"></span>
+          <span className={style.regularText}>Matthew the</span>{" "}
+          <span id="textChange"></span>
         </h1>
       </div>
     )

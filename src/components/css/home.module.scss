@@ -1,13 +1,14 @@
 @import "./variables.module";
 .cover {
   width: 100%;
-  height: calc(100vh + 112px);
+  height: calc(100vh);
   display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
   z-index: -2;
-  margin-top: -112px;
+  
+
 }
 
 .title,
@@ -34,13 +35,6 @@
   padding-top: 2rem;
 }
 
-.landingtext{
-  color:white;
-  font-size: 4rem;
-  line-height: 1.2;
-  margin-top: -500px;
-}
-
 
 .work {
   background-color: lightgreen;
@@ -53,12 +47,21 @@
 }
 
 .landingText{
+    line-height: 1.2;
+      margin-top: -500px;
   color:white;
   font-size: 4rem;
   margin-top: -20vh;
   text-align: center;
+  color: $themecolour;
+  font-family: zProxBold;
   @media (max-width: 993px) {
     font-size: 2.5rem;
  
   }
+}
+
+.regularText{
+  color:white;
+  font-family: zProxBold;
 }

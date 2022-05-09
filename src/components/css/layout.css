@@ -63,18 +63,6 @@ caption {
 }
 
 
-@font-face {
-  font-family: "ProxReg";
-  src: local("ProxReg"), url(../fonts/zProxReg.ttf) format("truetype");
-}
-@font-face {
-  font-family: "ProxBold";
-  src: local("ProxBold"), url(../fonts/zProxBold.ttf) format("truetype");
-}
-@font-face {
-  font-family: "ProxLight";
-  src: local("ProxLight"), url(../fonts/zProxLight.otf) format("oof");
-}
 
 /*============ BOOTSTRAP BREAK POINTS:
 
@@ -100,16 +88,16 @@ html {
   scroll-behavior: smooth;
 }
 @font-face {
-  font-family: "ProxReg";
-  src: local("ProxReg"), url(../fonts/zProxReg.ttf) format("truetype");
+  font-family: "zProxBold";
+  src: local("zProxBold"), url(../fonts/zProxBold.ttf) format("truetype");
 }
 @font-face {
-  font-family: "ProxBold";
-  src: local("ProxBold"), url(../fonts/zProxBold.ttf) format("truetype");
+  font-family: "zProxLight";
+  src: local("zProxLight"), url(../fonts/zProxLight.otf) format("oof");
 }
 @font-face {
-  font-family: "ProxLight";
-  src: local("ProxLight"), url(../fonts/zProxLight.otf) format("oof");
+  font-family: "zProxReg";
+  src: local("zProxReg"), url(../fonts/zProxReg.ttf) format("truetype");
 }
 ul {
   list-style: none;
