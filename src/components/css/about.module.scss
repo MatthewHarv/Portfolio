@@ -5,6 +5,16 @@
   font-size: 3rem;
   font-family: zProxBold;
 }
+.github{
+  color: $themecolour;
+  font-family: zProxBold;
+}
+.gitlink{
+  text-decoration: none;
+}
+.github:hover {
+text-decoration: underline;
+}
 
 .container{
   text-align: center;

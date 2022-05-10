@@ -31,8 +31,19 @@ export default class about extends Component {
           GatsbyJS and enjoy the frontend development and designing of websites.
         </p>
         <p className={style.description}>
-          Take a look at my work below, you can see all my code on github and
-          feel free to contact me with the form below.
+          In the future, I would like to become a more rounded full stack
+          developer with experience on a variety of web frameworks.
+        </p>
+        <p className={style.description}>
+          All my code is freely available on my{" "}
+          <a
+            className={style.gitlink}
+            href="https://github.com/MatthewHarv"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className={style.github}>github.</span>{" "}
+          </a>
         </p>
       </div>
     )
