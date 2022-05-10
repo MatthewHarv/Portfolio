@@ -43,8 +43,19 @@ text-decoration: underline;
     font-size: 1.2rem;
     width: 100%
     }
+    animation: fadeIn 2s;
 }
 .siteimage{
   margin-top:5px;
 }
 
+@keyframes fadeIn {
+  from{
+  transform: translateY(100%);
+    opacity: 0;
+  }
+  to{
+transform: translateY(0%);
+    opacity: 1;
+  }
+}
