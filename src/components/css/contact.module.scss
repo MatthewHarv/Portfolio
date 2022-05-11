@@ -8,7 +8,7 @@
 
 .outContact {
   min-height: 100vh;
-  padding: 30px;
+  padding-top: 100px;
   background: url("../../images/auckland.png");
   background-attachment: fixed;
   background-position: center;
@@ -22,24 +22,30 @@
  }
 
 .contactform {
-background-color: lightblue;
+  opacity: 0;
+background-color: #EFEBEB;
   color: black;
-  padding: 20px;
-  border: 1px solid black;
+ 
+ 
  width:80%;
- max-width:1000px;
- display: grid;
-  grid-template-columns:2fr 2fr;
-  margin:auto;
-  margin-top: 30vh;
-  min-height: 500px;
-        border-radius: 5px;
+
  @media (max-width: 768px) {
               grid-template-columns: 1fr;
 
-              
+        width: 90%;
 }
+ @media (max-width: 576px) {
 
+width: 100%;
+
+ }
+ max-width:1000px;
+ display: grid;
+ grid-template-columns:2fr 2fr;
+ margin:auto;
+ margin-top: 30vh;
+ min-height: 500px;
+ border-radius: 5px;
 }
 
 
@@ -84,6 +90,8 @@ background-color: lightblue;
   text-align: center;
   color:$themecolour;
   margin: auto;
+  padding-top:40px;
+  display: block;
 }
 
 
@@ -97,6 +105,7 @@ label {
   color: $themecolour;
     font-size: 3rem;
     font-family: zProxBold;
+        padding-top: 40px;
 }
 
 
@@ -104,6 +113,7 @@ label {
   font-size: 1.3rem;
   padding-top:2rem;
     font-family: zProxReg;
+    padding: 10px;
  
 }
 
@@ -125,3 +135,20 @@ label {
       font-size: 1.2rem;
         font-family: zProxReg;
   }
+
+    .fadein {
+      animation: fadeIn 2s;
+      opacity: 1;
+    }
+  
+    @keyframes fadeIn {
+      from {
+        transform: translateY(-50%);
+        opacity: 0;
+      }
+  
+      to {
+        transform: translateY(0%);
+        opacity: 1;
+      }
+    }
