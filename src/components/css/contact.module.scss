@@ -1,9 +1,7 @@
 @import "./variables.module";
 
-
 .header {
   color: black;
- 
 }
 
 .outContact {
@@ -17,66 +15,59 @@
 
   justify-content: center;
   align-items: center;
-
-  
- }
+}
 
 .contactform {
   opacity: 0;
-background-color: #EFEBEB;
+  background-color: #efebeb;
   color: black;
- 
- 
- width:80%;
 
- @media (max-width: 768px) {
-              grid-template-columns: 1fr;
+  width: 80%;
 
-        width: 90%;
-}
- @media (max-width: 576px) {
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
 
-width: 100%;
-
- }
- max-width:1000px;
- display: grid;
- grid-template-columns:2fr 2fr;
- margin:auto;
- margin-top: 30vh;
- min-height: 500px;
- border-radius: 5px;
+    width: 90%;
+  }
+  @media (max-width: 576px) {
+    width: 100%;
+  }
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  margin: auto;
+  margin-top: 30vh;
+  min-height: 500px;
+  border-radius: 5px;
 }
 
-
-.input, .inputMessage {
+.input,
+.inputMessage {
   border: 1px solid black;
   display: block;
   margin-bottom: 1rem;
   margin: auto;
-  width:80%;
+  width: 80%;
   height: 2.5rem;
   margin-top: 1.2rem;
   font-size: 1.3rem;
-  padding-left:10px;
+  padding-left: 10px;
   @media (max-width: 768px) {
-      width: 90%;
- 
+    width: 90%;
+  }
 }
-}
-.inputMessage{
- 
-    height: 8rem;  
-      resize: none;
+.inputMessage {
+  height: 8rem;
+  resize: none;
 }
 
-.input::placeholder, .inputMessage::placeholder{
+.input::placeholder,
+.inputMessage::placeholder {
   color: lightgray;
   font-size: 20px;
   font-family: Arial;
-    font-family: zProxReg;
+  font-family: zProxReg;
 }
-
 
 .inputButton:hover {
   background-color: lightgrey;
@@ -86,69 +77,62 @@ width: 100%;
   display: none;
 }
 
-.labelContainer{
+.labelContainer {
   text-align: center;
-  color:$themecolour;
+  color: $themecolour;
   margin: auto;
-  padding-top:40px;
+  padding-top: 40px;
   display: block;
 }
 
-
 label {
   width: 100%;
-
 }
-.contactTitle{
- text-align: center;
+.contactTitle {
+  text-align: center;
   margin-bottom: 20px;
   color: $themecolour;
-    font-size: 3rem;
-    font-family: zProxBold;
-        padding-top: 40px;
+  font-size: 3rem;
+  font-family: zProxBold;
+  padding-top: 40px;
 }
 
-
-.infoDescription{
+.infoDescription {
   font-size: 1.3rem;
-  padding-top:2rem;
-    font-family: zProxReg;
-    padding: 10px;
- 
+  padding-top: 2rem;
+  font-family: zProxReg;
+  padding: 10px;
 }
 
-.formButton{
- 
+.formButton {
   text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 4rem;
-   
-   
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.inputButton {
+  color: white;
+  height: 3rem;
+  width: 100px;
+  background-color: $themecolour;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-family: zProxReg;
+}
+
+.fadein {
+  animation: fadeIn 2s;
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(-50%);
+    opacity: 0;
   }
 
-  .inputButton{
-    color: white;
-    height:3rem;
-    width:100px;
-    background-color: $themecolour;
-      border-radius: 12px;
-      font-size: 1.2rem;
-        font-family: zProxReg;
+  to {
+    transform: translateY(0%);
+    opacity: 1;
   }
-
-    .fadein {
-      animation: fadeIn 2s;
-      opacity: 1;
-    }
-  
-    @keyframes fadeIn {
-      from {
-        transform: translateY(-50%);
-        opacity: 0;
-      }
-  
-      to {
-        transform: translateY(0%);
-        opacity: 1;
-      }
-    }
+}

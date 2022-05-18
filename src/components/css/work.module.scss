@@ -1,48 +1,36 @@
 @import "./variables.module";
-.title{
-
-
+.title {
   margin-bottom: 4rem;
   color: $themecolour;
-    font-size: 3rem;
-    font-family: zProxBold;
- 
+  font-size: 3rem;
+  font-family: zProxBold;
 }
-.tpptitle{
+.tpptitle {
+  color: black;
   padding-top: 4rem;
   font-size: 1.3rem;
   padding-bottom: 3rem;
   font-family: zProxBold;
-  
 }
 
 .container {
   text-align: center;
   padding-top: 150px;
-background-color: #EFEBEB;
-min-height: 100vh;
-@media (max-width: 992px) {
+  background-color: #efebeb;
+  min-height: 100vh;
+  @media (max-width: 992px) {
     padding-top: 100px;
   }
-  
 }
 
-.workimage{
+.workimage {
   margin-bottom: 7rem;
-   width:40%;
-   max-width: 1000px;
-  @media (max-width: 992px) {
-    width: 60%;
-  }
-    @media (max-width: 768px) {
-      width: 100%;
-    }
+  width: 80%;
 }
 
-
-
-.description, .descriptionLeading{
-font-size: 1.4rem;
+.description,
+.descriptionLeading {
+  font-size: 1.4rem;
   width: 80%;
   max-width: 1000px;
   margin: auto;
@@ -51,10 +39,18 @@ font-size: 1.4rem;
 
   @media (max-width: 992px) {
     font-size: 1.2rem;
-    width: 100%
+    width: 100%;
   }
 }
 
-.descriptionLeading{
+.descriptionLeading {
   padding-bottom: 3rem;
+}
+
+.workContainer {
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 768px) {
+    display: block;
+  }
 }
