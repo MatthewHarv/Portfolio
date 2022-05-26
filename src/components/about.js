@@ -33,9 +33,10 @@ export default function About() {
         }`}
       >
         I have gained a variety of experience throughout my career, from working
-        forklifts in warehouses, to helping customers over the phone in a
-        technician role, to developing a companies website and designing it to
-        their liking.
+        forklifts in warehouses, to helping customers over the phone, to
+        repairing and supporting hardware and software in a technician role. I
+        have also developed a few companies websites and designing it to their
+        liking.
       </p>
       <p
         ref={ref}
@@ -53,8 +54,8 @@ export default function About() {
           descriptionIsVisible ? style.fadein : ""
         }`}
       >
-        In the future, I would like to become a more rounded full stack
-        developer with experience on a variety of web frameworks.
+        My goals for the future are to improve both my programming and technical
+        skills.
       </p>
       <p
         className={`${style.description} ${
@@ -74,20 +75,3 @@ export default function About() {
     </div>
   )
 }
-
-/*
-
-
- const myRef = useRef()
-  const [myElementIsVisible, setMyElementIsVisible] = useState()
-  console.log("myElementIsVisible", myElementIsVisible)
-  useEffect(() => {
-    console.log("myRef", myRef.current)
-    const observer = new IntersectionObserver(entries => {
-      const entry = entries[0]
-      setMyElementIsVisible(entry.isIntersecting)
-    })
-    observer.observe(myRef.current)
-  }, [])
-
-*/
